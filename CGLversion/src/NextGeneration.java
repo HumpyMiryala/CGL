@@ -14,7 +14,7 @@ public class NextGeneration {
         }
         return countOfLives;
     }
-public boolean[][] generateNextGeneration(boolean currentGeneration[][]) {
+public boolean[][] generateNextGeneration(boolean currentGeneration[][], int h) {
     int n = currentGeneration.length;
     boolean[][] nextGeneration = new boolean[n][n];
     for (int i = 0; i < n; i++) {

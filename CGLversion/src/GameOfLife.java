@@ -1,8 +1,8 @@
 
 public class GameOfLife {
 	
-	public boolean[][] createBoard(int n, int l[][]) {
-		boolean[][] b =new boolean[n][n];
+	public boolean[][] createBoard(int n, int n1,int l[][]) {
+		boolean[][] b =new boolean[n1][n1];
 		for(int i=0; i<l.length;i++) {
 			int row = l[i][0];
 			int col = l[i][1];
@@ -11,7 +11,7 @@ public class GameOfLife {
 		return b;
 		
 	}
-	public void printBoard(boolean b[][]) {
+	public String printBoard(boolean b[][]) {
         StringBuffer sub = new StringBuffer();
         for (int i = 0; i < b.length; i++) {
             for (int j = 0; j < b.length; j++) {
@@ -22,6 +22,7 @@ public class GameOfLife {
             }
             sub.append("\n");
         }
-        System.out.print(sub.toString());
+        
+		return sub.toString();
     }
 }
